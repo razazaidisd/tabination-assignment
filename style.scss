@@ -1,0 +1,33 @@
+/*
+ * Author Syed Iqrar Raza
+ * Stylesheet v1.0.0
+ */
+
+/*Gloabl Variables*/
+$light-grey: #dbdbdb;
+$content-spacing: 15px;
+
+.wrapper{
+	width: 500px;
+}
+.tab{
+	&-item{
+		li{
+			background: $light-grey;
+			display: inline-block;
+			a{
+				display: block;
+				padding: $content-spacing;
+			}
+		}
+	}
+
+	&-content{
+		&--panel{
+			
+			&.show{
+				display: block;
+			}
+		}
+	}
+}

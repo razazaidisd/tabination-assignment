@@ -1,0 +1,11 @@
+{
+  "name": "pepper-assignment",
+  "version": "1.0.0",
+  "description": "Frontend developer assignment test from Pepper.com",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Syed Iqrar Raza",
+  "license": "ISC"
+}

@@ -4,33 +4,37 @@
 <head>
     <title>Pepper Task 2 - Iqrar Raza - Frontend Assignment</title>
     <link rel="stylesheet" href="style.css">
+    <!-- To utilize Promises in IE - Using Bluebird Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script>
     <script type="text/javascript" src="util.js"></script>
 </head>
 
 <body>
-    <div class="wrapper">
-        <div class="tab">
-            <div class="tab-item">
-                <ul>
-                    <li>
-                        <a href="javascript:;" onclick="getData('1')">Option 1</a>
-                    </li>
-                    <li>
-                        <a href="javascript:;" onclick="getData('2')">Option 2</a>
-                    </li>
-                    <li>
-                        <a href="javascript:;" onclick="getData('3')">Option 3</a>
-                    </li>
-                </ul>
+    <div class="tabination">
+        <h1>Task 2 | Pepper.com Frontend</h1>
+        <h3>CSS Tabination using :target | Loading Data from JSON files</h3>
+        <p>This example is created using :target property of CSS.</p>
+        <ul class="tab-item">
+            <li><a href="#panel1" onclick="getData('1')">Option 1</a></li>
+            <li><a href="#panel2" onclick="getData('2')">Option 2 This is a long Option</a></li>
+            <li><a href="#panel3" onclick="getData('3')">Option 3 </a></li>
+        </ul>
+        <div class="tab-content">
+            <div id="panel1" class="tab-content--panel">
+                <h3></h3>
+                <p class="desc"></p>
             </div>
-            <div class="tab-content">
-                <div class="tab-content--panel">
-                    <h3></h3>
-                    <p class="desc"></p>
-                </div>
+            <div id="panel2" class="tab-content--panel">
+                <h3></h3>
+                <p class="desc"></p>
+            </div>
+            <div id="panel3" class="tab-content--panel">
+                <h3></h3>
+                <p class="desc"></p>
             </div>
         </div>
     </div>
+    <pre>Note: To avoid CORS, please run this file in some server (<a href="http://www.wampserver.com/en/" target="_blank">Wamp</a> / <a href="https://www.npmjs.com/package/http-server" target="_blank">Http Server</a>)</pre>
 </body>
 <script type="text/javascript" src="app.js"></script>
 

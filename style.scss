@@ -1,33 +1,88 @@
 /*
- * Author Syed Iqrar Raza
- * Stylesheet v1.0.0
+ * Project: Pepper.com Frontend Assignment 
+ * Author: Syed Iqrar Raza
+ * Stylesheet: v1.0.0
  */
 
+
 /*Gloabl Variables*/
-$light-grey: #dbdbdb;
+
+$light-gray: #dbdbdb;
+$grey: #ccc;
 $content-spacing: 15px;
 
-.wrapper{
-	width: 500px;
+body{
+	font-family: sans-serif;
 }
-.tab{
-	&-item{
-		li{
-			background: $light-grey;
-			display: inline-block;
-			a{
-				display: block;
-				padding: $content-spacing;
-			}
-		}
-	}
 
-	&-content{
-		&--panel{
-			
-			&.show{
-				display: block;
+
+.tabination {
+    position: relative;
+    width: 80%;
+}
+
+.tab{
+	&-item {
+	    list-style: none;
+	    overflow: hidden;
+	    margin: 0;
+	    padding: 0;
+	    li {
+		    display: inline;
+		    a {
+		    	background: $light-gray;
+			    padding: $content-spacing;
+			    color: #000;
+			    text-decoration: none;
+			    border: 1px solid $grey;
+			    float: left;
+			    position: relative;
 			}
 		}
 	}
+	&-content {
+	    &--panel {
+	    	border: 1px solid $grey;
+		    display: none;
+		}
+		#panel1:target,
+		#panel2:target,
+		#panel3:target,
+		{
+    		display: block;
+		}
+	}
 }
+
+// Tabination with Form Element
+.tab{
+	&-panel{
+		display: none;
+	}
+	&-pane {
+		label {
+		    display: inline-block;
+		    background: $light-gray;
+		    cursor: pointer;
+		    box-sizing: border-box;
+		    span{
+			    display: inline-block;
+			    padding: $content-spacing;
+			    border: 1px solid $grey;
+			}
+		}
+	}
+	input[type=radio]:checked ~ label{
+		background: #fff;
+	    cursor: default;
+	}
+	input[type=radio]:checked ~ label > .tab-panel  {
+	    display: inline-block;
+	    border: 1px solid $grey;
+	}
+}
+
+.hide{
+	display: none;
+}
+

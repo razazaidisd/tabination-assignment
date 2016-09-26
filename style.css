@@ -1,0 +1,58 @@
+/*
+ * Project: Pepper.com Frontend Assignment 
+ * Author: Syed Iqrar Raza
+ * Stylesheet: v1.0.0
+ */
+/*Gloabl Variables*/
+body {
+  font-family: sans-serif; }
+
+.tabination {
+  position: relative;
+  width: 80%; }
+
+.tab-item {
+  list-style: none;
+  overflow: hidden;
+  margin: 0;
+  padding: 0; }
+  .tab-item li {
+    display: inline; }
+    .tab-item li a {
+      background: #dbdbdb;
+      padding: 15px;
+      color: #000;
+      text-decoration: none;
+      border: 1px solid #ccc;
+      float: left;
+      position: relative; }
+.tab-content--panel {
+  border: 1px solid #ccc;
+  display: none; }
+.tab-content #panel1:target,
+.tab-content #panel2:target,
+.tab-content #panel3:target {
+  display: block; }
+
+.tab-panel {
+  display: none; }
+.tab-pane label {
+  display: inline-block;
+  background: #dbdbdb;
+  cursor: pointer;
+  box-sizing: border-box; }
+  .tab-pane label span {
+    display: inline-block;
+    padding: 15px;
+    border: 1px solid #ccc; }
+.tab input[type=radio]:checked ~ label {
+  background: #fff;
+  cursor: default; }
+.tab input[type=radio]:checked ~ label > .tab-panel {
+  display: inline-block;
+  border: 1px solid #ccc; }
+
+.hide {
+  display: none; }
+
+/*# sourceMappingURL=style.css.map */
